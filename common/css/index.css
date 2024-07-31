@@ -1,0 +1,184 @@
+.results-wrap {
+  width: 100%;
+}
+
+.mb {
+  display: none !important;
+}
+
+:root {
+  --globalnav-background: rgba(22, 22, 23, 0.8);
+}
+
+button {
+  background: none;
+  border: 0;
+  box-sizing: content-box;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  overflow: visible;
+  vertical-align: inherit;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.mlogo img {
+  transition: opacity 0.5 ease;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-center input {
+    width: 100%;
+  }
+  .indexNavWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .mb {
+    display: block !important;
+  }
+
+  #header {
+    display: none !important;
+  }
+
+  .indexNavWrap {
+    z-index: 99999999;
+    background: var(--globalnav-background);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    transition: height 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+  }
+
+  .indexNav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: var(--globalnav-background);
+        backdrop-filter: saturate(180%) blur(20px);
+        -webkit-backdrop-filter: saturate(180%) blur(20px); */
+    padding-right: 0;
+  }
+
+  .indexMenu {
+    z-index: 99999;
+    position: relative;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+    /* 添加过渡效果 */
+  }
+
+  .active .indexMenu {
+    opacity: 1;
+    height: 100px;
+    /* 调整展开的最大高度 */
+  }
+
+  .centerWrap {
+    position: relative;
+    height: 340px;
+    width: 90%;
+  }
+
+  .hero-center .tags {
+    width: 100%;
+  }
+
+  .hero-center {
+    overflow-x: hidden;
+  }
+
+  .hero-center .logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .hero-center {
+    width: 100%;
+    /* height: calc(100vh - 133px); */
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+#globalnav .globalnav-menutrigger {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  opacity: 0.8;
+  cursor: pointer;
+  outline-offset: -7px;
+  transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1),
+    color 0.32s cubic-bezier(0.4, 0, 0.6, 1);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#globalnav #globalnav-menutrigger-button {
+  color: #fff;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.menuList .menuItem {
+  opacity: 0;
+  pointer-events: none;
+  transition-delay: calc(0.2s + var(--r-globalnav-flyout-item-number) * 20ms);
+  transition-duration: 0.24s;
+  transition-property: opacity, transform, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.6, 1),
+    cubic-bezier(0.4, 0, 0.6, 1), step-start;
+  padding: 3px 48px;
+}
+.menuList .menuItem a {
+  font-size: 24px;
+  line-height: 32px;
+  padding: 7px 0;
+  color: rgb(232, 232, 237);
+  font-weight: 500;
+}
+
+.menuList.open .menuItem {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.backgroundTop {
+  width: 100%;
+  height: 48px;
+  background: rgb(22, 22, 23);
+  position: relative;
+  z-index: 99999999;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.72);
+  justify-content: flex-end;
+  padding-right: 16px;
+}

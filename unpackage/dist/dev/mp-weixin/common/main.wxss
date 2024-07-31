@@ -1,0 +1,172 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+@font-face {
+	font-family: 'InterVariableFont';
+	/* src: url('https://www.uesg.cn/font/Inter-Regular.ttf') format('truetype'); */
+	src: url('https://www.uesg.cn/font/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'InterRegular';
+	src: url('https://www.uesg.cn/font/Inter-Regular.ttf') format('truetype');
+	/* src: url('https://www.uesg.cn/font/Inter-VariableFont_slnt,wght.ttf') format('truetype'); */
+}
+@font-face {
+	font-family: 'MontserratRegular';
+	src: url('https://www.uesg.cn/font/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'MontserratVariableFont';
+	src: url('https://www.uesg.cn/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+.content {}
+page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	font-size: 30rpx;
+	-webkit-text-size-adjust: none;
+	font-family: InterVariableFont;
+	/* font-family: Fontsemr, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体'; */
+}
+view {
+	font-family: InterVariableFont;
+	/* font-family: Fontsemr, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体'; */
+	line-height: 22px;
+}
+text {
+	font-family: InterVariableFont;
+	/* font-family: Fontsemr, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体'; */
+	line-height: 22px;
+}
+button {
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+	background-color: rgba(255, 255, 255, 0);
+}
+button::after {
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+}
+input,
+textarea {
+	background-color: rgba(255, 255, 255, 0);
+}
+.main-color {
+	color: $pt-color-main;
+}
+.fs13 {
+	font-size: 13px;
+	line-height: 20px;
+}
+.fs15 {
+	font-size: 15px;
+	line-height: 21px;
+}
+.fs17 {
+	font-size: 17px;
+	line-height: 24px;
+}
+.fs25 {
+	font-size: 25px;
+	line-height: 31px;
+}
+.main-bg-color {
+	background-color: $pt-color-main;
+}
+/* tabBar 998 */
+/* 导航 998 */
+/* 自定义蒙版 10000, 大一点防止动画遮挡视觉差 */
+/* toast */
+uni-toast {
+	z-index: 10000;
+}
+/* 隐藏安卓手机下scroll-view横向滚动条 */
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	color: transparent;
+	display: none;
+}
+.newfont {
+	font-family: FontNumber, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+.fontMedium {
+	/* 数字英文粗 */
+
+	font-family: FontMedium, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+.fontRegular {
+	/* 数字英文细 */
+	font-family: FontRegular, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+.fontAliMedium {
+	/* 数字英文细 */
+	font-family: Fontsemm, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+.fontAliRegular {
+	/* 数字英文细 */
+	font-family: Fontalir, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+.fontAliBold {
+	/* 数字英文细 */
+	font-family: Fontalib, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+.content {
+	font-size: 13px;
+	line-height: 20px;
+}
+.titlebig {
+	font-size: 25px;
+	line-height: 36px;
+}
+.title {
+	font-size: 15px;
+	line-height: 20px;
+}
+/* .regular {
+	font-family: FontNumber, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+
+.bold {
+	font-family: FontNumber, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+.english {
+	font-family: FontNumber, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+}
+.number {
+	font-family: FontNumber, SFUIDisplay, '苹方/PingFangSC', 'Robot', '思源黑体';
+} */
+page {
+
+	-webkit-text-size-adjust: none !important;
+	/* 禁用Webkit内核浏览器的文字大小调整功能 */
+}
+
+

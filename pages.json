@@ -1,0 +1,40 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "UESG",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		}
+        ,{
+            "path" : "pages/apply/apply",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "名片申请",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "UESG",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^cm-(.*)": "@/common/components/cm-$1/index.vue",
+			"^pt-(.*)": "@/common/components/pt-$1/index.vue",
+			"^mine-(.*)": "@/pages/mine/components/mine-$1/index.vue",
+			"^shop-(.*)": "@/pages/shop/components/shop-$1/index.vue"
+		}
+	},
+	"uniIdRouter": {}
+
+}

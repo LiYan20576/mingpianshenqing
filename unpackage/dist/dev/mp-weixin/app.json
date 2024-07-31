@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tabBar/home/home",
+    "pages/tabBar/my/my"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/subpkg",
+      "pages": [
+        "pay/pay",
+        "webview/webview",
+        "more/more"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#D8D8D8",
+    "selectedColor": "#000000",
+    "backgroundColor": "rgba(0,255,51,0.3)",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/home/home",
+        "text": "了解更多"
+      },
+      {
+        "pagePath": "pages/tabBar/my/my",
+        "text": "我的名片"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

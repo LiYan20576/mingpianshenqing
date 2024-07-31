@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mavon-editor": "^2.10.4",
+    "text-decoding": "^1.0.0"
+  }
+}
